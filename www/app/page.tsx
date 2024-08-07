@@ -9,7 +9,7 @@ export default function Index() {
       </p>
       <input
         type="text"
-        placeholder="Enter your destination"
+        placeholder="Type your query here...who is HailORide?"
         className="px-4 py-2 w-64 text-lg border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
       />
       <Link href="/dashboard" className="text-blue-600 hover:underline mt-4">
