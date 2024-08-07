@@ -7,7 +7,7 @@ import { Suspense } from 'react'
 export default function Members() {
   return (
     <Suspense fallback={
-      <div className="flex-1 w-full flex justify-center items-center">
+      <div className="flex-1 w-full flex justify-center items-center" aria-label="Loading">
         <p className="text-lg">Loading member content...</p>
       </div>
     }>
