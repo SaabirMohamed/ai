@@ -2,7 +2,17 @@ import { createClient } from '@/utils/supabase/server'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 
-export default async function Members() {
+import { Suspense } from 'react'
+
+export default function Members() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <MembersContent />
+    </Suspense>
+  )
+}
+
+async function MembersContent() {
   const cookieStore = cookies()
   const supabase = createClient()
 
