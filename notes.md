@@ -20,3 +20,4 @@
 11. The UI displays the responses and the agent logs.
 
 ## Command examples:
+aider --sonnet --show-diffs --dark-mode --code-theme monokia --no-auto-lint
