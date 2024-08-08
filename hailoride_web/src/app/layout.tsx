@@ -23,11 +23,11 @@ export default function RootLayout({
             <nav className="container mx-auto flex justify-between items-center">
               <Link href="/" className="text-2xl font-bold">HailORide</Link>
               <div className="space-x-4">
+                <Link href="/" className="hover:text-blue-300">Home</Link>
+                <Link href="/about" className="hover:text-blue-300">About</Link>
+                <Link href="/contacts" className="hover:text-blue-300">Contacts</Link>
                 <Link href="/login" className="hover:text-blue-300">Login</Link>
                 <Link href="/signup" className="hover:text-blue-300">Signup</Link>
-                <Link href="/" className="hover:text-blue-300">Home</Link>
-                <Link href="/contacts" className="hover:text-blue-300">Contacts</Link>
-                <Link href="/about" className="hover:text-blue-300">About</Link>
                 <Link href="/app" className="hover:text-blue-300">App</Link>
               </div>
             </nav>
