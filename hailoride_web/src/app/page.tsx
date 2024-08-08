@@ -1,9 +1,24 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-gradient-to-b from-gray-900 to-gray-700 text-white">
-      <div className="text-center">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-900 to-gray-700 text-white">
+      <header className="w-full p-4 bg-gray-800">
+        <nav className="container mx-auto flex justify-between items-center">
+          <Link href="/" className="text-2xl font-bold">HailORide</Link>
+          <div className="space-x-4">
+            <Link href="/login" className="hover:text-blue-300">Login</Link>
+            <Link href="/signup" className="hover:text-blue-300">Signup</Link>
+            <Link href="/" className="hover:text-blue-300">Home</Link>
+            <Link href="/contacts" className="hover:text-blue-300">Contacts</Link>
+            <Link href="/about" className="hover:text-blue-300">About</Link>
+            <Link href="/app" className="hover:text-blue-300">App</Link>
+          </div>
+        </nav>
+      </header>
+      <main className="flex-grow flex flex-col items-center justify-center p-24">
+        <div className="text-center">
         <h1 className="text-8xl font-bold mb-6 animate-pulse">
           HailORide
         </h1>
