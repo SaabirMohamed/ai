@@ -149,6 +149,14 @@ EOF
 )
 create_docker_setup "oll_agent_assist" 5456 "$OLLAMA_APP_CODE"
 
+# Function to list files in the root directory
+list_root_files() {
+    echo "Listing files in the root directory:"
+    ls -1 /
+}
+
 # Output completion message
 echo "Docker containers for AI agents have been set up and are running."
- 
+
+# List files in the root directory
+list_root_files
