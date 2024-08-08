@@ -20,5 +20,7 @@
 10. The UI waits for responses from agents it has spawned, agents are only used when intructions say so.
 11. The UI displays the responses and the agent logs.
 
+## Setting up ragflow [high resources needed 50gbhdd + 16gb ram]
+#### git clone https://github.com/infiniflow/ragflow.git
 
  
